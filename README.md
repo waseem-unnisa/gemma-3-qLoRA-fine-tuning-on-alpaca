@@ -53,7 +53,7 @@ The trained LoRA adapter is published on Hugging Face:
 
 **[wazym/gemma3-alpaca-lora](https://huggingface.co/wazym/gemma3-alpaca-lora)**
 
-python
+```python
 from unsloth import FastModel
 
 model, tokenizer = FastModel.from_pretrained(
@@ -71,25 +71,14 @@ inputs = tokenizer.apply_chat_template(
 
 outputs = model.generate(input_ids=inputs, max_new_tokens=128)
 print(tokenizer.decode(outputs[0]))
-
-
-
-
-## 📓 Notebook
-
-The full training process ... is in [`Fine_Tune_Gemma_3_1B.ipynb`](./Fine_Tune_Gemma_3_1B.ipynb).
-
-To run it yourself: open in Google Colab, set the runtime to **T4 GPU**, and run all cells top to bottom.
+```
 
 ---
 
-## 🗺️ What's Next
+## 📓 Notebook
+The full training process ... is in [`Fine_Tune_Gemma_3_1B.ipynb`](./Fine_Tune_Gemma_3_1B.ipynb).
 
-- [ ] Train for more steps / full epochs for improved output quality
-- [ ] Evaluate on a held-out test set with quantitative metrics
-- [ ] Try a domain-specific dataset instead of general instruction-following
-- [ ] Merge adapter into the base model and export to GGUF for local inference
-
+To run it yourself: open in Google Colab, set the runtime to **T4 GPU**, and run all cells top to bottom.
 ---
 
 ##  Author
