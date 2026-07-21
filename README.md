@@ -53,7 +53,7 @@ The trained LoRA adapter is published on Hugging Face:
 
 **[wazym/gemma3-alpaca-lora](https://huggingface.co/wazym/gemma3-alpaca-lora)**
 
-```python
+python
 from unsloth import FastModel
 
 model, tokenizer = FastModel.from_pretrained(
@@ -71,9 +71,9 @@ inputs = tokenizer.apply_chat_template(
 
 outputs = model.generate(input_ids=inputs, max_new_tokens=128)
 print(tokenizer.decode(outputs[0]))
-```
 
----
+
+
 
 ## 📓 Notebook
 
@@ -94,4 +94,6 @@ To run it yourself: open in Google Colab, set the runtime to **T4 GPU**, and run
 
 ##  Author
 
-[GitHub](https://github.com/waseem-unnisa) · [LinkedIn](https://www.linkedin.com/in/waseem-unnisa-8a68293ba/) · [Hugging Face](https://huggingface.co/wazym) 
+- **GitHub:** [waseem-unnisa](https://github.com/waseem-unnisa)
+- **LinkedIn:** [Waseem Unnisa](https://www.linkedin.com/in/waseem-unnisa-8a68293ba/)
+- **Hugging Face:** [wazym](https://huggingface.co/wazym)
