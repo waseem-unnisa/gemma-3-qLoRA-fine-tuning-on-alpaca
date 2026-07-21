@@ -76,6 +76,7 @@ print(tokenizer.decode(outputs[0]))
 
 
 ## 📓 Notebook
+
 The full training process ... is in [`Fine_Tune_Gemma_3_1B.ipynb`](./Fine_Tune_Gemma_3_1B.ipynb).
 
 To run it yourself: open in Google Colab, set the runtime to **T4 GPU**, and run all cells top to bottom.
